@@ -1,10 +1,15 @@
+
+# TODO
+  - [ ] Get familiar with indexeddb and use [Dexie](https://dexie.org/docs/Tutorial/Vue) to import and export the db
+  - [ ] Get familiar with [script setup](https://vuejs.org/api/sfc-script-setup.html#basic-syntax) and composition api of vue 3
+  - [ ] Create PWA app
+  - [ ] Provide Docker support
+  - [ ] (Optional) Versioning and releases
+
+
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ## Type Support For `.vue` Imports in TS
 
