@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@types/node": "^18.7.17",
     "roboto-fontface": "*",
+    "url": "^0.11.0",
     "vue": "^3.2.37",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
