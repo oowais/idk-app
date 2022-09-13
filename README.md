@@ -1,11 +1,10 @@
-
 # TODO
-  - [ ] Get familiar with indexeddb and use [Dexie](https://dexie.org/docs/Tutorial/Vue) to import and export the db
-  - [ ] Get familiar with [script setup](https://vuejs.org/api/sfc-script-setup.html#basic-syntax) and composition api of vue 3
-  - [ ] Create PWA app
-  - [ ] Provide Docker support
-  - [ ] (Optional) Versioning and releases
 
+- [ ] Get familiar with indexeddb and use [Dexie](https://dexie.org/docs/Tutorial/Vue) to import and export the db
+- [ ] Get familiar with [script setup](https://vuejs.org/api/sfc-script-setup.html#basic-syntax) and composition api of vue 3
+- [ ] Create PWA app
+- [ ] Provide Docker support
+- [ ] (Optional) Versioning and releases
 
 # Vue 3 + TypeScript + Vite
 
