@@ -1,9 +1,10 @@
 import App from "@/App.vue";
-import router from "@/router";
 import vuetify from "@/plugins/vuetify";
 import { loadFonts } from "@/plugins/webfontloader";
+import router from "@/router";
+import { createPinia } from "pinia";
 import { createApp } from "vue";
 
 loadFonts();
 
-createApp(App).use(vuetify).use(router).mount("#app");
+createApp(App).use(vuetify).use(router).use(createPinia()).mount("#app");

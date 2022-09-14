@@ -1,21 +1,26 @@
 <template>
-  <v-layout>
+  <v-app>
     <v-app-bar>
       <app-bar />
     </v-app-bar>
-    <v-navigation-drawer permanent> Nav </v-navigation-drawer>
+    <v-navigation-drawer permanent app> <nav-bar /> </v-navigation-drawer>
     <v-main> <router-view /> </v-main>
-  </v-layout>
+    <v-footer class="justify-center pl-0" inset app>
+      <footer-bar />
+    </v-footer>
+  </v-app>
 </template>
 
 <script lang="ts">
-import AppBar from "@/components/AppBar.vue";
+import AppBar from "@/views/AppBar.vue";
+import FooterBar from "@/views/FooterBar.vue";
+import NavBar from "@/views/NavBar.vue";
 import { defineComponent } from "vue";
 import { useTheme } from "vuetify";
 
 export default defineComponent({
   name: "App",
-  components: { AppBar },
+  components: { AppBar, NavBar, FooterBar },
   data() {
     return {};
   },
