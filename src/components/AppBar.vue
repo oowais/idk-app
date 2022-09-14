@@ -1,5 +1,14 @@
 <template>
-  <p class="text-h4 pl-8">Home | TimeJot Web</p>
+  <router-link to="/" custom v-slot="{ navigate }">
+    <span
+      class="text-h4 pl-8"
+      @click="navigate"
+      @keypress.enter="navigate"
+      role="link"
+    >
+      Home | TimeJot Web
+    </span>
+  </router-link>
   <v-spacer />
   <v-btn icon="mdi-brightness-4" color="primary" @click="toggleTheme" />
 </template>

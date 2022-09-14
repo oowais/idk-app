@@ -4,7 +4,7 @@
       <app-bar />
     </v-app-bar>
     <v-navigation-drawer permanent> Nav </v-navigation-drawer>
-    <v-main> <v-card>Main</v-card> </v-main>
+    <v-main> <router-view /> </v-main>
   </v-layout>
 </template>
 
