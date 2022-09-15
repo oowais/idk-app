@@ -2,6 +2,7 @@
 
 - [x] Setup vue router
 - [x] Get familiar with Pinia
+- [x] Setup basic notifications service
 - [ ] Dockerize
 - [ ] Devcontainer for vscode
 - [ ] Get familiar with indexeddb and use [Dexie](https://dexie.org/docs/Tutorial/Vue)

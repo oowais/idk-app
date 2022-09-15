@@ -1,9 +1,10 @@
 <template>
   <v-card class="pa-6">
-    <v-card-title> Home Count: {{ state.count }} </v-card-title>
+    <v-card-title> Home Count: {{ counter.value }} </v-card-title>
     <v-card-actions>
-      <v-btn color="primary" @click="state.count++">incerement</v-btn>
-      <v-btn color="warning" @click="state.count = 0">reset</v-btn>
+      <v-btn icon="mdi-plus" color="primary" @click="counter.value++" />
+      <v-btn icon="mdi-minus" color="primary" @click="counter.value--" />
+      <v-btn color="warning" @click="counter.value = 0">reset</v-btn>
     </v-card-actions>
     <br />
     <v-btn variant="outlined" color="warning" rounded="pill" @click="notifier">
@@ -13,7 +14,7 @@
     <br />
     <v-btn
       variant="outlined"
-      color="warning"
+      color="success"
       rounded="pill"
       @click="sendNotification"
     >
@@ -26,7 +27,7 @@
 import useNotifier from "@/composables/useNotifier";
 import { reactive } from "vue";
 
-const state = reactive({ count: 0 });
+const counter = reactive({ value: 0 });
 const notifier = () => {
   useNotifier().requestPermission();
 };
