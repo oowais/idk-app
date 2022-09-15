@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 const useNotifierStatusStore = defineStore("notifierStatus", {
   state: () => {
-    return { permission: "default" as NotificationPermission };
+    return { permission: Notification.permission as NotificationPermission };
   },
   actions: {
     setPermission(permission: NotificationPermission) {

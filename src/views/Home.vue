@@ -20,6 +20,14 @@
     >
       Send Notification
     </v-btn>
+    <v-btn
+      variant="outlined"
+      color="accent"
+      rounded="pill"
+      @click="closeNotification"
+    >
+      Close Notification
+    </v-btn>
   </v-card>
 </template>
 
@@ -31,8 +39,21 @@ const counter = reactive({ value: 0 });
 const notifier = () => {
   useNotifier().requestPermission();
 };
+let notification: Notification;
 
-const sendNotification = () => {
-  useNotifier().newNotification("yuhuu");
+const sendNotification = async () => {
+  notification = await useNotifier().newNotification("yuhuu", {
+    body: "Body",
+    icon: "favicon.ico",
+    silent: true,
+    tag: "yuhuu",
+  });
+  notification.addEventListener("click", () => {
+    console.log("clicked");
+  });
+};
+
+const closeNotification = () => {
+  if (notification) notification.close();
 };
 </script>
