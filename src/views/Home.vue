@@ -6,30 +6,32 @@
       <v-btn color="warning" @click="state.count = 0">reset</v-btn>
     </v-card-actions>
     <br />
-    <v-btn
-      variant="outlined"
-      color="secondary"
-      rounded="pill"
-      @click="store.increment(1)"
-    >
-      increment global store
+    <v-btn variant="outlined" color="warning" rounded="pill" @click="notifier">
+      Request permission
     </v-btn>
-    <br /><br />
+    <br />
+    <br />
     <v-btn
       variant="outlined"
       color="warning"
       rounded="pill"
-      @click="store.reset"
+      @click="sendNotification"
     >
-      Reset global store
+      Send Notification
     </v-btn>
   </v-card>
 </template>
 
 <script setup lang="ts">
-import { useGlobalStore } from "@/store/global";
+import useNotifier from "@/composables/useNotifier";
 import { reactive } from "vue";
 
 const state = reactive({ count: 0 });
-const store = useGlobalStore();
+const notifier = () => {
+  useNotifier().requestPermission();
+};
+
+const sendNotification = () => {
+  useNotifier().newNotification("yuhuu");
+};
 </script>
