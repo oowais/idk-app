@@ -2,11 +2,13 @@
 
 - [x] Setup vue router
 - [x] Get familiar with Pinia
+- [ ] Dockerize
+- [ ] Devcontainer for vscode
 - [ ] Get familiar with indexeddb and use [Dexie](https://dexie.org/docs/Tutorial/Vue)
 - [ ] Ability to import and export db
 - [ ] Get familiar with [script setup](https://vuejs.org/api/sfc-script-setup.html#basic-syntax) and composition api of vue 3
 - [ ] Create PWA app
-- [ ] Provide Docker support
+
 - [ ] (Optional) Versioning and releases
 
 ### Vue 3 + TypeScript + Vite
