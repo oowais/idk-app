@@ -6,7 +6,7 @@
       role="link"
       style="cursor: pointer"
     >
-      TimeJot Web
+      IDK App
     </span>
   </router-link>
   <v-spacer />
