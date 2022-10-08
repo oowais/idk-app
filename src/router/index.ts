@@ -1,6 +1,7 @@
 import About from "@/views/apps/About.vue";
 import Counter from "@/views/apps/Counter.vue";
 import Notifier from "@/views/apps/Notifier.vue";
+import RandomKitty from "@/views/apps/RandomKitty.vue";
 import Home from "@/views/Home.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -10,6 +11,12 @@ export const routes = [
     name: "Home",
     component: Home,
     icon: "mdi-home",
+  },
+  {
+    path: "/randomkitty",
+    name: "Random Kitty",
+    component: RandomKitty,
+    icon: "mdi-cat",
   },
   {
     path: "/notifier",

@@ -10,28 +10,6 @@
 </template>
 
 <script setup lang="ts">
-import useNotifier from "@/composables/useNotifier";
 import { reactive } from "vue";
-
 const counter = reactive({ value: 0 });
-const notifier = () => {
-  useNotifier().requestPermission();
-};
-let notification: Notification;
-
-const sendNotification = async () => {
-  notification = await useNotifier().newNotification("yuhuu", {
-    body: "Body",
-    icon: "favicon.ico",
-    silent: true,
-    tag: "yuhuu",
-  });
-  notification.addEventListener("click", () => {
-    console.log("clicked");
-  });
-};
-
-const closeNotification = () => {
-  if (notification) notification.close();
-};
 </script>
