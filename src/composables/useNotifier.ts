@@ -11,8 +11,8 @@ const useNotifier = () => {
     }
     const permission = await Notification.requestPermission();
     store.setPermission(permission);
-    if (permission === "granted") console.log("permission is granted! YAY");
-    else if (permission === "denied") console.log("permission is denied! :(");
+    if (permission === "granted") alert("permission is granted! YAY");
+    else if (permission === "denied") alert("permission is denied! :(");
   };
 
   const getPermissionStatus = (): NotificationPermission => {

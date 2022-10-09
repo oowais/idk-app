@@ -21,18 +21,24 @@
     >
       Close Notification
     </v-btn>
+    <br />
+    <br />
+    <span>{{ text }}</span>
   </v-card>
 </template>
 
 <script setup lang="ts">
 import useNotifier from "@/composables/useNotifier";
+import { ref } from "vue";
 
 const notifier = () => {
   useNotifier().requestPermission();
 };
 let notification: Notification;
+const text = ref<String>("");
 
 const sendNotification = async () => {
+  text.value = "";
   notification = await useNotifier().newNotification("yuhuu", {
     body: "Body",
     icon: "favicon.ico",
@@ -40,11 +46,14 @@ const sendNotification = async () => {
     tag: "yuhuu",
   });
   notification.addEventListener("click", () => {
-    console.log("clicked");
+    text.value = "You clicked on a notification, YATTA";
   });
 };
 
 const closeNotification = () => {
-  if (notification) notification.close();
+  if (notification) {
+    text.value = "You closed on a notification, YATTA";
+    notification.close();
+  }
 };
 </script>

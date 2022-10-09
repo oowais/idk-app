@@ -2,6 +2,7 @@
   <div class="d-flex justify-space-around flex-wrap">
     <template v-for="route in routes">
       <v-card
+        min-width="20rem"
         v-if="route.name !== 'Home'"
         :prepend-icon="route.icon"
         :title="route.name"

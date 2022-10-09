@@ -1,5 +1,6 @@
 import About from "@/views/apps/About.vue";
 import Counter from "@/views/apps/Counter.vue";
+import CssPlayground from "@/views/apps/CssPlayground.vue";
 import Notifier from "@/views/apps/Notifier.vue";
 import RandomKitty from "@/views/apps/RandomKitty.vue";
 import Home from "@/views/Home.vue";
@@ -17,6 +18,12 @@ export const routes = [
     name: "Random Kitty",
     component: RandomKitty,
     icon: "mdi-cat",
+  },
+  {
+    path: "/cssplayground",
+    name: "CSS Playground",
+    component: CssPlayground,
+    icon: "mdi-language-css3",
   },
   {
     path: "/notifier",

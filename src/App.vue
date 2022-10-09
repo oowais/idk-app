@@ -8,7 +8,12 @@
     </v-navigation-drawer>
     <v-main>
       <br />
-      <v-btn class="ml-4 mb-4" icon @click="back">
+      <v-btn
+        class="ml-4 mb-4"
+        icon
+        @click="back"
+        :disabled="currentRoutePath === '/'"
+      >
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
       <br />
@@ -30,6 +35,11 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "App",
   components: { AppBar, NavBar, FooterBar },
+  computed: {
+    currentRoutePath(): string {
+      return router.currentRoute.value.path;
+    },
+  },
   methods: {
     back() {
       router.back();
