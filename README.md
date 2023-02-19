@@ -23,3 +23,11 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
 You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+
+### Using [npm check updates](https://www.npmjs.com/package/npm-check-updates) to keep dep and devDep versions upto date
+
+- Install it globally via `npm i npm-check-updates` (one time thing)
+- `npx ncu` to check which version can be updated to what
+- `npx ncu -u -t patch` to update patch versions and then `npm i`
+- `npx ncu -u -t minor` to update minor versions and then `npm i`
+- `npx ncu -u` to update major versions and then `npm i`
