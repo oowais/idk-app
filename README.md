@@ -11,11 +11,11 @@
 - [ ] Devcontainer for vscode
 - [ ] (Optional) Versioning and releases
 
-### Vue 3 + TypeScript + Vite
+## Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-### Type Support For `.vue` Imports in TS
+## Type Support For `.vue` Imports in TS
 
 Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
 
@@ -24,7 +24,9 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
 
-### Using [npm check updates](https://www.npmjs.com/package/npm-check-updates) to keep dep and devDep versions upto date
+## Using [npm check updates](https://www.npmjs.com/package/npm-check-updates) to keep dep and devDep versions upto date
+
+> Nice [blog](https://chrispennington.blog/blog/how-to-update-npm-packages-safely-with-npm-check-updates/) about ncu usage.
 
 - Install it globally via `npm i npm-check-updates` (one time thing)
 - `npx ncu` to check which version can be updated to what
