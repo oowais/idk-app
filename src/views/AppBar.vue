@@ -7,7 +7,7 @@
       style="cursor: pointer"
     >
       <div class="glitch-wrapper">
-        <div class="glitch" data-glitch="IDK App">IDK App</div>
+        <div class="glitch" data-glitch="IDK">IDK</div>
       </div>
     </span>
   </router-link>
